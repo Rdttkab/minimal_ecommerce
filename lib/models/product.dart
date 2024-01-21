@@ -4,9 +4,18 @@ class Product {
   final String description;
   final String imagePath;
 
-  Product(
-      {required this.name,
-      required this.price,
-      required this.description,
-      required this.imagePath});
+  Product({
+    required this.name,
+    required this.price,
+    required this.description,
+    required this.imagePath,
+  });
+
+  Product.fromJson(
+    Map<String, dynamic> json,
+    this.name,
+    this.price,
+    this.description,
+    this.imagePath,
+  );
 }

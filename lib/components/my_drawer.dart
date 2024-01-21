@@ -27,7 +27,11 @@ class MyDrawer extends StatelessWidget {
               MyListTile(
                 title: 'Shop',
                 icon: Icons.home,
-                onTap: () => Navigator.pop(context),
+                onTap: () {
+                  Navigator.pop(context);
+
+                  Navigator.pushNamed(context, '/shop_page');
+                },
               ),
               MyListTile(
                 title: 'Cart',

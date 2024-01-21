@@ -1,5 +1,3 @@
-import 'dart:js';
-
 import 'package:flutter/material.dart';
 import 'package:minimal_ecommerce/models/shop.dart';
 import 'package:provider/provider.dart';

@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 import 'product.dart';
 
@@ -8,26 +8,29 @@ class Shop extends ChangeNotifier {
       name: 'Product 1',
       price: 99.99,
       description: 'Tritani commune quo aptent deterruisset propriae.',
-      imagePath: '',
+      imagePath: 'assets/earphone.jpg',
     ),
     Product(
-        name: 'Product 2',
-        price: 99.99,
-        description: 'Tritani commune quo aptent deterruisset propriae.',
-        imagePath: ''),
+      name: 'Product 2',
+      price: 99.99,
+      description: 'Tritani commune quo aptent deterruisset propriae.',
+      imagePath: 'assets/pen.jpg',
+    ),
     Product(
-        name: 'Product 3',
-        price: 99.99,
-        description: 'Tritani commune quo aptent deterruisset propriae.',
-        imagePath: ''),
+      name: 'Product 3',
+      price: 99.99,
+      description: 'Tritani commune quo aptent deterruisset propriae.',
+      imagePath: 'assets/sunglass.jpg',
+    ),
     Product(
-        name: 'Product 4',
-        price: 99.99,
-        description: 'Tritani commune quo aptent deterruisset propriae.',
-        imagePath: '')
+      name: 'Product 4',
+      price: 99.99,
+      description: 'Tritani commune quo aptent deterruisset propriae.',
+      imagePath: 'assets/watch.jpg',
+    ),
   ];
 
-  List<Product> _cart = [];
+  final List<Product> _cart = [];
 
   List<Product> get shop => _shop;
 
